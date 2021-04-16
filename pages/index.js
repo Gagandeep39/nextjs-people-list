@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <div>
-      <h1>Home</h1>
-      <p>
+      <h1 className={styles.title}>Home</h1>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur
         elementum ante. Maecenas in consectetur nulla, eu tempus ipsum. Sed id
         mi id massa lacinia tincidunt in vel sapien. Quisque nec nibh id magna
@@ -18,7 +19,7 @@ export default function Home() {
         in eu leo. Nam eu risus vitae est pulvinar auctor. Nunc aliquet sodales
         dolor sit amet auctor.
       </p>
-      <p>
+      <p className={styles.text}>
         Fusce non eros viverra, aliquet metus eget, dictum ipsum. Sed nec eros
         ac lectus vestibulum elementum. Sed eros elit, vestibulum vitae mauris
         nec, blandit blandit arcu. Aliquam a egestas dolor, non tristique neque.
@@ -32,7 +33,9 @@ export default function Home() {
         ante venenatis, nec laoreet quam tristique. Donec finibus vehicula dolor
         ac volutpat. Maecenas laoreet urna eu vulputate vulputate.
       </p>
-      <Link href="/people">See People Listing</Link>
+      <Link href="/people">
+        <a className={styles.btn}>See People Listing</a>
+      </Link>
     </div>
   );
 }
