@@ -1,11 +1,8 @@
 import Link from 'next/link';
-import Footer from '../components/Footer';
-import NavBar from '../components/NavBar';
 
 export default function Home() {
   return (
     <div>
-      <NavBar />
       <h1>Home</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur
@@ -36,7 +33,6 @@ export default function Home() {
         ac volutpat. Maecenas laoreet urna eu vulputate vulputate.
       </p>
       <Link href="/people">See People Listing</Link>
-      <Footer />
     </div>
   );
 }
