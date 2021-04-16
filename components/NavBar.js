@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const NavBar = () => {
   return (
     <nav>
       <div className="logo">
-        <h1>People</h1>
+        {/* Img component optimises image and donloads when it is visible on the sreen */}
+        <Image src="/logo.svg" width={128} height={77} />
       </div>
       <Link href="/">
         <a>Home</a>
