@@ -1,6 +1,18 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const NotFound = () => {
+  const router = useRouter();
+
+  // Use Effect hook - Execute only onces after page is mounted
+  // After 3 sec, user is redirected to home page
+  useEffect(() => {
+    setTimeout(() => {
+      router.push('/');
+    }, 3000);
+  }, []);
+
   return (
     <div className="not-found">
       <h1>Oooops...</h1>
