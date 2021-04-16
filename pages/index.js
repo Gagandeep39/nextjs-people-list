@@ -1,65 +1,42 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+    <div>
+      <NavBar />
+      <h1>Home</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur
+        elementum ante. Maecenas in consectetur nulla, eu tempus ipsum. Sed id
+        mi id massa lacinia tincidunt in vel sapien. Quisque nec nibh id magna
+        consequat pretium. Sed vel ligula leo. Proin commodo diam vitae urna
+        vulputate, id varius magna placerat. Proin convallis malesuada nulla in
+        pellentesque. Phasellus ac bibendum purus, eget malesuada enim. Vivamus
+        in felis luctus, imperdiet tellus vel, pharetra quam. Nam quis felis
+        egestas, iaculis ex sed, fringilla quam. Fusce accumsan massa eget dolor
+        sagittis, vel aliquam nibh elementum. Cras nec tortor maximus, tincidunt
+        turpis sed, bibendum turpis. Proin at nunc id nibh convallis malesuada
+        in eu leo. Nam eu risus vitae est pulvinar auctor. Nunc aliquet sodales
+        dolor sit amet auctor.
+      </p>
+      <p>
+        Fusce non eros viverra, aliquet metus eget, dictum ipsum. Sed nec eros
+        ac lectus vestibulum elementum. Sed eros elit, vestibulum vitae mauris
+        nec, blandit blandit arcu. Aliquam a egestas dolor, non tristique neque.
+        Aliquam augue sapien, tempus in lectus sit amet, malesuada venenatis
+        diam. Curabitur nec consectetur massa. Duis tincidunt nunc facilisis
+        tellus tempus feugiat. Mauris vitae diam purus. Curabitur sollicitudin
+        eros eu egestas iaculis. Nullam fringilla eleifend turpis non
+        pellentesque. Integer suscipit ultricies nisl in elementum. Duis sapien
+        elit, viverra vel lectus volutpat, vestibulum vulputate enim. Ut nec
+        odio lacinia, elementum est eu, efficitur libero. In eleifend erat nec
+        ante venenatis, nec laoreet quam tristique. Donec finibus vehicula dolor
+        ac volutpat. Maecenas laoreet urna eu vulputate vulputate.
+      </p>
+      <Link href="/people">See People Listing</Link>
+      <Footer />
     </div>
-  )
+  );
 }
